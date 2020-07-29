@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- PARENT -->
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<TableRow>
+
+			<TextView
+				android:text="Όνομα:"
+				android:textColor="@color/colorPrimaryDark"
+				android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:layout_weight="22"
+				android:gravity="left"
+				android:padding="2dip"
+				android:textSize="13sp"/>
+			<TextView
+				android:id="@+id/name"
+				android:textColor="#000000"
+				android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:layout_weight="78"
+				android:gravity="left"
+				android:padding="2dip"
+				android:textSize="13sp"/>
+		</TableRow>
+
+	    <TableRow>
+			<TextView
+				android:text="Κωδικός:"
+				android:textColor="@color/colorPrimaryDark"
+				android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:layout_weight="23"
+				android:gravity="left"
+				android:padding="2dip"
+				android:textSize="13sp"/>
+			<TextView
+				android:id="@+id/code"
+				android:textColor="#000000"
+				android:layout_height="wrap_content"
+				android:layout_width="0dp"
+				android:layout_weight="77"
+				android:gravity="left"
+				android:padding="2dip"
+				android:textSize="13sp"/>
+		</TableRow>
+	<TableRow >
+			
+		<TextView
+			android:text="ΑΦΜ:"
+			android:textColor="@color/colorPrimaryDark"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="23"
+			android:gravity="left"
+			android:padding="2dip"
+			android:textSize="13sp"/>
+		<TextView
+			android:id="@+id/afm"
+			android:textColor="#000000"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="77"
+			android:gravity="left"
+			android:padding="2dip"
+			android:textSize="13sp"/>
+	</TableRow>
+
+	<TableRow >
+		<TextView
+			android:text="Τηλέφωνο:"
+			android:textColor="@color/colorPrimaryDark"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="23"
+			android:gravity="left"
+			android:padding="2dip"
+			android:textSize="13sp"/>
+		<TextView
+			android:id="@+id/phone11"
+			android:textColor="#000000"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="77"
+			android:gravity="left"
+			android:padding="2dip"
+			android:textSize="13sp" />	
+		</TableRow>
+
+	</TableLayout>
+

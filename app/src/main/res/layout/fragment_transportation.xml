@@ -1,0 +1,150 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TableLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:contextClickable="true"
+            android:focusable="true"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:text=" Οδηγός:"
+                    android:textColor="#e60000"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <android.panos.ram.rammilkcollection.models.SingleSpinnerSearch
+
+                    android:id="@+id/salesmenSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:text="Κωδικός:"
+                    android:textColor="#e60000"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Driver_ID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:ems="10"
+                    android:textSize="13sp"
+                    android:maxLength="6"
+                    android:inputType="number" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/clear_driver_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:layout_gravity="center"
+                    app:backgroundTint="#4db8ff"
+                    app:elevation="6dp"
+                    app:fabSize="mini"
+                    app:pressedTranslationZ="12dp"
+                    app:srcCompat="@drawable/ic_clear_black_24dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="14sp" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:text=" Αυτοκίνητο:"
+                    android:textColor="#e60000"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <android.panos.ram.rammilkcollection.models.SingleSpinnerSearch
+
+                    android:id="@+id/transportationsSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="70"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+
+
+
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+

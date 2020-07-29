@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- PARENT -->
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<TextView
+			android:text="Διαμέρισμα"
+			android:textColor="@color/red"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="33"
+			android:gravity="left"
+			android:padding="2dip"
+			android:textSize="13sp"
+			android:textStyle="bold"/>
+		<TextView
+			android:id="@+id/chamber"
+			android:textColor="#000000"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="7"
+			android:gravity="right"
+			android:padding="2dip"
+  		    android:textSize="13sp"/>
+		<TextView
+			android:text="    "
+			android:textColor="#000000"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="60"
+			android:gravity="right"
+			android:padding="2dip"
+			android:textSize="13sp"/>
+
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+	    <TextView
+			android:text="Αρχ. Ποσότητα"
+			android:textColor="#000000"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="35"
+			android:gravity="left"
+			android:padding="2dip"
+			android:textSize="13sp"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:id="@+id/prevquantity"
+			android:textColor="#000000"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="15"
+			android:gravity="right"
+			android:padding="2dip"
+			android:textSize="13sp"/>
+		<TextView
+			android:text="Μετ. Ποσότητα"
+			android:textColor="#000000"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="35"
+			android:gravity="left"
+			android:padding="2dip"
+			android:textSize="13sp"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:id="@+id/transquantity"
+			android:textColor="#000000"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="15"
+			android:gravity="right"
+			android:padding="2dip"
+			android:textSize="13sp"/>
+
+
+
+	</TableRow>
+
+	<TableRow
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<TextView
+			android:text="Συν. Ποσότητα"
+			android:textColor="@color/colorPrimary"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="35"
+			android:gravity="left"
+			android:padding="2dip"
+			android:textSize="13sp"
+			android:textStyle="bold"/>
+
+		<TextView
+			android:id="@+id/totalquantity"
+			android:textColor="#000000"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="15"
+			android:gravity="right"
+			android:padding="2dip"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:text="Δείγμα"
+			android:textColor="@color/colorPrimary"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="20"
+			android:gravity="left"
+			android:padding="1dip"
+			android:textSize="13sp"
+			android:textStyle="bold"/>
+		<EditText
+			android:id="@+id/sample"
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:layout_weight="30"
+			android:inputType="number"
+			android:maxLength="8"
+			android:textSize="13sp"/>
+
+
+
+	</TableRow>
+
+</TableLayout>
+

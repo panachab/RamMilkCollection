@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#ccebff"
+    android:paddingTop="5dp">
+
+    <TableLayout
+        android:id="@+id/topTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contextClickable="true"
+        android:focusable="true"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="left"
+                android:padding="1dip"
+                android:text="Διαμ/σμα Προέλευσης "
+                android:textColor="#e60000"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/soursechamber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:gravity="right"
+                android:padding="1dip"
+                android:textColor="#e60000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="23"
+                android:gravity="left"
+                android:padding="1dip"
+                android:text="Ποσότητα:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chamberqty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="19"
+                android:gravity="left"
+                android:padding="1dip"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_span="3" />
+
+        </TableRow>
+
+
+        <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:padding="4dp"
+            android:drawableLeft="@drawable/ic_system_update_alt_white_18dp"
+            android:background="@drawable/image_button"
+            android:textColor="#FFF"
+            android:textSize="13sp"
+            android:text="@string/save"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/updateButton" />
+
+        <TextView
+            android:text=""
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:gravity="left"
+            android:padding="2dip"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <android.support.design.widget.FloatingActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/popupfab"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:backgroundTint="#4db8ff"
+            app:fabSize="mini"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            android:src="@drawable/ic_clear_black_24dp" />
+    </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_span="3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_span="4"
+                android:background="@color/red" />
+
+        </TableRow>
+    </TableLayout>
+
+     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/topTable"
+        android:layout_height="330dp"
+        android:paddingTop="@dimen/scrollview_margintop">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contextClickable="true"
+            android:focusable="true"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+
+            <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Διαμ. Προορισμού  1"
+                        android:textColor="@color/red"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:padding="2dip"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:text="Μετάγγιση"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:layout_weight="25"
+                        android:gravity="left"
+                        android:padding="2dip"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/editTransqty1"
+                        android:layout_width="0dp"
+                        android:layout_weight="25"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού  2"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty2"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού  3"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty3"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού  4"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty4"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού  5"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty5"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού  6"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty6"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού  7"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty7"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού  8"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty8"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού  9"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty9"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού 10"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty10"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού 11"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty11"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού 12"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty12"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού 13"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty13"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού 14"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty14"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Διαμ. Προορισμού 15"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:text="Μετάγγιση"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTransqty15"
+                    android:layout_width="0dp"
+                    android:layout_weight="25"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textSize="13sp"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dip"
+                    android:layout_span="4">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textSize="16dip"
+                        android:text=""/>
+
+                </android.support.design.widget.TextInputLayout>
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Ram MilkCollection</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="type_to_search">Πληκτρολόγησε για Αναζήτηση</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_transportation">Οδηγός και Αυτοκίνητο</string>
+    <string name="nav_milkcollection">Παραλαβές Γάλακτος</string>
+    <string name="nav_tradescheck">Έλεγχοι Δρομολογίων</string>
+    <string name="nav_settings">Ρυθμίσεις</string>
+    <string name="nav_company">Στοιχεία Εταιρείας</string>
+    <string name="nav_mobile_update">Ενημέρωση του Mobile</string>
+    <string name="nav_central_update">Ενημέρωση του Κεντρικού</string>
+    <string name="nav_application_update">Ενημέρωση της Εφαρμογής</string>
+    <string name="delete_docs">Διαγραφή Παραστατικών</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Οδηγός και Αυτοκίνητο</item>
+        <item>Παραλαβές//Παγολεκάνες</item>
+        <item>Έλεγχοι Δρομολογίων</item>
+        <item>Ενημέρωση του Mobile</item>
+        <item>Ενημέρωση του Κεντρικού</item>
+        <item>Ενημέρωση της Εφαρμογής</item>
+        <item>Ρυθμίσεις</item>
+        <item>Στοιχεία Εταιρείας</item>
+        <item>Διαγραφή Παραστατικών</item>
+
+    </string-array>
+
+    <string name="configfile">Αρχείο Ρυθμίσεων</string>
+    <string name="deletealert">Προσοχή!!</string>
+    <string name="deletemessage">Είστε Σίγουρος για την Διαγραφή?</string>
+    <string name="year">Έτος</string>
+    <string name="save">Αποθήκευση</string>
+    <string name="delete">Διαγραφή</string>
+    <string name="search">Αναζήτηση</string>
+    <string name="action_settings">Ρυθμίσεις</string>
+    <string name="download_lists">Ενημέρωση των Αρχείων του Mobile</string>
+    <string name="upload_lists">Ενημέρωση των Αρχείων του Κεντρικού</string>
+    <string name="download_farmers">Ενημέρωση Παραγωγών</string>
+    <string name="download_materials">Ενημέρωση Ειδών</string>
+    <string name="download_parameters">Ενημέρωση Παραμέτρων</string>
+     <string name="update_mobile">Ενημέρωση Mobile</string>
+    <string name="upload_farmers">Ενημέρωση Παραγωγών</string>
+    <string name="upload_trades">Ενημέρωση Παραστατικών</string>
+    <string name="update_central">Ενημέρωση Κεντρικού</string>
+    <string name="update_application">Ενημέρωση Εφαρμογής Ram MilkCollection</string>
+    <string name="confignotexists">Οι ρυθμίσεις της Εφαρμογής δεν είναι σωστές!!</string>
+    <string name="companynotexists">Πρέπει να καταχωρήσετε τα Στοιχεία της Εταιρείας!!</string>
+    <string name="drivernotexists">Πρέπει να επιλέξετε Οδηγό και Αυτοκίνητο!!</string>
+
+
+    <string name="access_token">pk.eyJ1IjoicGFuYWNoYWIiLCJhIjoiY2o4em93NzVkMnAzejJ3cXFnbTI4YWRmMiJ9.4TKUOHh-7MqY-vH6lj_fFg</string>
+
+    <!--  Bluetooth and Printer -->
+    <string name="printer_disconnect_msg">"Πρόβλημα στην Αποσύνδεση του Bluetooth!!"</string>
+    <string name="bt_notexists_msg">"Δεν Βρέθηκε Θύρα Bluetooth!!"</string>
+    <string name="printer_search_problem">"Πρόβλημα στην Αναζήτηση του Εκτυπωτή!!"</string>
+    <string name="printer_notfount_msg">"O Εκτυπωτήs δεν Βρέθηκε!!"</string>
+    <string name="conn_problem_msg">"Πρόβλημα στην Σύνδεση με τον Εκτυπωτή!!"</string>
+    <string name="conn_fail_msg">"Η Σύνδεση με τον Εκτυπωτή Bluetooth Απέτυχε!!"</string>
+    <string name="print_error_msg">"Πρόβλημα κατα την Εκτύπωση!!"</string>
+
+</resources>

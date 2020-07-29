@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#a4a4a8"
+        android:paddingLeft="30dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Δρομολόγιο :"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:gravity="left"
+                android:padding="3dip"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/aa"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:gravity="left"
+                android:padding="3dip"
+                android:textSize="13sp"/>
+            <TextView
+                android:text=""
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:padding="3dip"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:padding="3dip"
+                android:textSize="13sp"/>
+
+
+        </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:text="Από Δ.Παραλαβής :"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:gravity="left"
+                android:padding="1dip"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/fromtradecode"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="43"
+                android:gravity="left"
+                android:padding="1dip"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:text=""
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="0dip"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="0dip"
+                android:textSize="13sp"/>
+        </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <TextView
+                android:text="Έως Δ.Παραλαβής :"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="40"
+                android:gravity="left"
+                android:padding="1dip"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/uptotradecode"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="43"
+                android:gravity="left"
+                android:padding="1dip"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:text=""
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="0dip"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="0dip"
+                android:textSize="13sp"/>
+        </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="5sp"
+            android:layout_span="4">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="5sp"
+                android:text=""/>
+
+        </android.support.design.widget.TextInputLayout>
+    </TableRow>
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_span="2"
+            android:padding="4dp"
+            android:drawableLeft="@drawable/ic_close_black_18dp"
+            android:background="@drawable/image_delete_button"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:text="Ακύρωση"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/cancelButton" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_span="2"
+            android:padding="1dp"
+            android:drawableLeft="@drawable/ic_print_black_18dp"
+            android:background="@drawable/image_print_button"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:text="Εκτύπωση"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/printButton" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="5sp"
+            android:layout_span="4">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="5sp"
+                android:text=""/>
+
+        </android.support.design.widget.TextInputLayout>
+    </TableRow>
+
+    </TableLayout>
+
+

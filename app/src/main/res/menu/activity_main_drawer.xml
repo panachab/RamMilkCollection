@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_transportation"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/nav_transportation"/>
+         <item
+             android:id="@+id/nav_collection"
+             android:icon="@drawable/ic_event_black_24dp"
+             android:title="@string/nav_milkcollection"/>
+         <item
+             android:id="@+id/nav_tradescheck"
+             android:icon="@drawable/ic_event_black_24dp"
+             android:title="@string/nav_tradescheck" />
+
+
+
+     </group>
+
+
+
+    <group android:checkableBehavior="single" android:id="@+id/group1">
+            <item
+                android:id="@+id/nav_mobile_update"
+                android:icon="@drawable/ic_cloud_download_black_24dp"
+                android:title="@string/nav_mobile_update"/>
+            <item
+                android:id="@+id/nav_central_update"
+                android:icon="@drawable/ic_cloud_upload_black_24dp"
+                android:title="@string/nav_central_update" />
+            <item
+                android:id="@+id/nav_application_update"
+                android:icon="@drawable/ic_cloud_download_black_24dp"
+                android:title="@string/nav_application_update" />
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/group4">
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/nav_settings" />
+            <item
+                android:id="@+id/nav_company"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/nav_company" />
+            <item
+                android:id="@+id/delete_docs"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Μηδενισμός Παραστατικών" />
+
+    </group>
+
+
+</menu>
