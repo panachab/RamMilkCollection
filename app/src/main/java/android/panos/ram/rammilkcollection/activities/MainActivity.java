@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView navigationView;
     private DrawerLayout drawer;
     private Toolbar toolbar;
-
+    private String stavros;
 
     // index to identify current nav menu item
     public static int navItemIndex = 0;
